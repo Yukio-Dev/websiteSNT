@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+                <title>Apprends à coder !</title>
+            
+</head>
+
+<html>
+
+
+
+<style>
+    
+body{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+
+
+}
+
+html{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+        text-decoration: none;
+        color-adjust: none;
+
+}
+div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 17.5%;
+			width: 65%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+        div#chapter_title {
+			width: 55%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 22.5%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+        div#chapter {
+			width: 80%;
+			text-align: left;
+			margin-left: 10%;
+			margin-top: 70px;
+			margin-bottom: 50px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+		}
+
+        div#app_list{
+			width: 40%;
+			height: 290px;
+			margin-left: 30%;
+			margin-bottom: 150px;
+			border: solid #010440 4px;
+			border-radius: 45px;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif; ;
+			font-weight: 800;
+			font-size: 24px;
+			color: #010440;
+			
+
+		}
+
+		.app_icons{
+			display: inline-block;
+			margin-top: 40px;
+			margin-left: 40px;
+			font-family: 'Open Sans', sans-serif; ;
+			font-weight: 800;
+			font-size: 21px;
+            vertical-align: middle;
+		}
+
+		img{
+		position: relative;
+		width: 100px;
+		top: 30px;
+        }
+
+        div#next_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 1620px;
+                left: 1570px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#nextchapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#nextchapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#nextchapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#nextchapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#nextchapter:hover:after{
+                width: 100%;
+                }
+
+
+
+
+                div#previous_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 1620px;
+                left: 360px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#previouschapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#previouschapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#previouschapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#previouschapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#previouschapter:hover:after{
+                width: 100%;
+                }
+
+
+
+                .bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+                }
+
+</style>
+
+    <body>
+
+        
+        <div id="blue_bar">
+            <div id="header"><h1>Comment apprendre à coder ?</h1><br>
+            </div>
+        </div>
+
+        <div id="chapter_title">
+            Chapitre 3 : Apprendre grâce à Internet
+        </div>
+
+        <div id="chapter">
+
+			Maintenant que tu sais sur quel langage te concentrer et comment l'écrire, tu vas devoir l'apprendre, et là est le plus gros du travail !
+			C'est logique, un langage ça ne s'apprend pas en claquant des doigts. Mais c'est plus simple quand tu sais quels outils sont à ta disposition. <br>
+            Si les développeurs d'il y à quelques années devaient apprendre dans des livres, heureusement pour toi c'est bien plus simple aujourd'hui. <br>
+            A partir de là, plusieurs possibilités s'offrent à toi. <br> <br>
+            <li>Tu peux d'abord regarder des tutoriels sur YouTube, il y en a des très bien expliqués et très complets. Ce n'est pas la meilleure méthode si tu veux 
+            coder toi-même en étant autonome, mais ça marche.</li><br>
+
+            <li>Si tu préfères apprendre à ton rythme, tu peux apprendre un langage via des applications. Je tiens à te prévenir, la grande majorité des applications
+                sont en anglais, alors mieux vaut passer ton chemin si tu ne le maitrise pas un minimum. <br>
+            Les applications t'apprendront le langage en lui même et te feront éventuellement faire des projets simples pour t'entrainer, mais ce n'est pas toujours le cas.
+            Je peux te conseiller les applications SoloLearn et Mimo qui sont assez connues, mais celles-ci sont payantes (en étant un peu créatif, rien n'est vraiment 
+            payant sur internet, mais ça c'est à tes risques et périls...). Ce ne sont pas les seules et il en existe évidemment beaucoup d'autres que tu peux essayer.</li> <br>
+
+            <li>Enfin, la méthode que je conseil, c'est d'apprendre via des sites webs. Tu peux notamment utiliser OpenClassrooms ou W3School, les deux sont gratuits et 
+                très complets. J'ai personnellement une préférence pour OpenClassrooms qui possède des vidéos explicatives au début et à la fin de chaque cours, 
+                et qui va t'apprendre à coder en réalisant un projet directement. Le site estime la durée de chaque formation (une formation pour débutants dure environ une vingtaine d'heure) et 
+                favorise la pratique à la théorie. Pratiquer, c'est la façon la plus efficace pour apprendre !
+            </li>
+            <br>
+            Une fois ton apprentissage débuté, je t'encourage à ne pas recopier le code que tu vois à l'écran. <br> Comprend le, et modifie-le à ta manière pour y ajouter ta 
+            touche personnelle. Je t'encourage grandement à rechercher sur Internet comment faire quelque chose de précis et complexe lorsque tu ne sais pas. 
+            Tu tomberas soit sur un site explicatif soit sur un des nombreux forums où des gens auront sûrement déjà répondu à ta question avec un exemple de code 
+            (celui que j'utilise le plus est Stack Overflow, mais celui-ci est également en anglais)
+
+		</div>
+
+        <div id="app_list">
+			
+			Va faire un tour sur les sites : <br>
+
+			<div class="app_icons">OpenClassrooms <br>
+				<a href="https://openclassrooms.com/fr/">
+				<img src="https://upload.wikimedia.org/wikipedia/fr/0/0d/Logo_OpenClassrooms.png" alt=""
+                style="margin: 20px;"></a>
+			</div>
+            <div class="app_icons">W3School<br>
+				<a href="https://www.w3schools.com/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png" alt="Visual Studio Code"
+                style="margin: 22px;"></a>
+			</div>
+			<div class="app_icons">Stack Overflow<br>
+				<a href="https://stackoverflow.com/">
+				<img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" alt="Visual Studio Code"
+                style="width: 140px;"></a>
+			</div>
+            
+
+		</div>
+
+        <div id="previous_button">
+			<a id="previouschapter" href="Chapitre 2.html"><span><strong>Chapitre précédent</strong></span></a>
+		  </div>
+	
+	
+		<div id="next_button">
+			<a id="nextchapter" href="Chapitre 4.html"><span><strong>Dernier chapitre</strong></span></a>
+		  </div>
+	
+		  <div class="bottombanner"></div>
+
+    </body>
+
+</html>
