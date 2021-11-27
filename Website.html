@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>		
+<head> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+	<link rel="icon" href="ressources\icon.png">
+				<title>Apprends à coder !</title>
+</head>
+		
+
+	
+<style>
+
+		body{
+			width:auto;
+			background-color: rgb(245, 245, 245);
+
+
+		}
+		
+		html{
+			width:auto;
+			background-color: rgb(245, 245, 245);
+		}
+
+		a{
+				text-decoration: none;
+				color-adjust: none;
+
+		}
+		@media screen and (min-width:1300px) and (max-width:2000px){
+		div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 17.5%;
+			width: 65%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+		
+
+	.parent {
+			border: solid 5px #010440 ;
+			border-radius: 45px;
+			margin-top: 4rem;
+			margin-left: 40px;
+			margin-right: 40px;
+			padding-bottom:3rem ;
+			text-align: center;
+			}
+
+
+	div#preintro{
+			width: 1100px;
+			position: relative;
+			text-align: left;
+			margin-top: 55px;
+			margin-left: 30px;
+			margin-right: auto;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 5px dotted #010440;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+
+		div#sommaire_title{
+			text-decoration: underline;
+			text-align: center;
+
+
+		}
+
+		div#sommaire {
+			width: 380px;
+			height: 270px;
+			overflow-y: hidden;
+			position: relative;
+			text-align: left;
+			line-height: 30px;
+			vertical-align: bottom;
+			margin-top: 50px;
+			margin-right: 80px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			font-size: 17px;
+			color: rgb(245, 245, 245);
+			border-radius: 45px;
+			display: inline-block;
+			background-color: #010440;
+		}
+
+		div#intro_title {
+			width: 55%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 22.5%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+		div#intro {
+			width: 50%;
+			text-align: left;
+			margin-left: 23.5%;
+			margin-top: 70px;
+			margin-bottom: 160px;
+            padding: 1.5%;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+			}
+
+
+		.bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+		}
+
+		.topbanner{
+			position: relative;
+			width: 100%;
+			top: 10px;
+			padding-bottom:5px;
+			background-color: #010440;
+
+		}
+
+    div#next_button{
+    float: right;
+    position: absolute;
+    overflow: hidden;
+    top: 1105px;
+    left: 1650px;
+    transform: translate(-50%, -50%);
+    }
+
+        a#nextchapter{
+        display: block;
+        width: 340px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 28px;
+        font-family: sans-serif; 	
+        text-decoration: none;
+        color: #010440;
+        border: 2px solid #010440;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        border-radius: 35px;
+        }
+
+        a#nextchapter span{
+        position: relative;
+        z-index: 2;
+        }
+
+        a#nextchapter:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #010440;
+        border-radius: 35px;
+        transition: all .35s;
+        }
+
+        a#nextchapter:hover{
+        color: rgb(245, 245, 245);
+        }
+
+        a#nextchapter:hover:after{
+        width: 100%;
+        }
+
+		
+	}
+
+	@media screen and (min-width:1px) and (max-width:1290px){
+		div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+		
+
+	.parent {
+			border: solid 5px #010440 ;
+			border-radius: 45px;
+			margin-top: 4rem;
+			margin-left: 40px;
+			margin-right: 40px;
+			padding-bottom:3rem ;
+			text-align: center;
+			}
+
+
+	div#preintro{
+			width: 50%;
+			position: relative;
+			text-align: left;
+			margin-top: 55px;
+			margin-left: 2%;
+			margin-right: auto;
+			margin-top: 6.5%;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 5px dotted #010440;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+
+		div#sommaire_title{
+			text-decoration: underline;
+			text-align: center;
+
+
+		}
+
+		div#sommaire {
+			width: 380px;
+			height: 270px;
+			overflow-y: hidden;
+			position: relative;
+			text-align: left;
+			line-height: 30px;
+			vertical-align: bottom;
+			margin-top: 50px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			font-size: 17px;
+			color: rgb(245, 245, 245);
+			border-radius: 45px;
+			display: inline-block;
+			background-color: #010440;
+		}
+
+		div#intro_title {
+			width: 70%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 15%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+		div#intro {
+			width: 65%;
+			text-align: left;
+			margin-left: 17.5%;
+			margin-top: 70px;
+			margin-bottom: 160px;
+            padding: 1.5%;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+			}
+
+
+		.bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+		}
+
+		.topbanner{
+			position: relative;
+			width: 100%;
+			top: 10px;
+			padding-bottom:5px;
+			background-color: #010440;
+
+		}
+
+    div#next_button{
+    float: right;
+    position: absolute;
+    overflow: hidden;
+    top: 136.5%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    }
+
+        a#nextchapter{
+        display: block;
+        width: 340px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 28px;
+        font-family: sans-serif; 	
+        text-decoration: none;
+        color: #010440;
+        border: 2px solid #010440;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        border-radius: 35px;
+        }
+
+        a#nextchapter span{
+        position: relative;
+        z-index: 2;
+        }
+
+        a#nextchapter:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #010440;
+        border-radius: 35px;
+        transition: all .35s;
+        }
+
+        a#nextchapter:hover{
+        color: rgb(245, 245, 245);
+        }
+
+        a#nextchapter:hover:after{
+        width: 100%;
+        }
+
+		
+	}
+
+
+
+</style>
+
+<body>
+
+<div id="blue_bar">
+    <div id="header"><h1>Comment apprendre à coder ?</h1><br>
+    </div>
+</div>
+
+<div class="parent">
+	<div id="sommaire">
+		<div id="sommaire_title">SOMMAIRE</div>
+		<br>
+				<p>
+					<li>Intro </li> 
+					 <li><a href="ressources\Chapitre 1.html"
+					style="color: rgb(245, 245, 245);">Chap. 1 : Quel langage choisir ?</a></li> 
+					<li><a href="ressources\Chapitre 2.html"
+					style="color: rgb(245, 245, 245);">Chap. 2 : Comment écrire du code</a></li> 
+					 <li><a href="ressources\Chapitre 3.html"
+					style="color: rgb(245, 245, 245);">Chap. 3 : Apprendre grâce à Internet</a></li> 
+					 <li><a href="ressources\Chapitre 4.html"
+					style="color: rgb(245, 245, 245);">Chap. 4 : La méthode miracle...</a></li> 
+
+
+				</p> 
+			</div>
+
+			<div id="preintro">
+			Hello ! Dans ce petit guide je vais t'expliquer simplement quels moyens tu as à ta disposition si tu veux apprendre à coder, pour en faire ton métier ou juste apprendre pour le plaisir. <br>
+			N'hésite pas à faire tes recherches aussi de ton côté si tu veux en savoir plus.
+			</div>
+
+			
+</div>
+
+
+	<div id="intro_title">
+		INTRODUCTION
+	</div>
+
+<div id="intro">
+	Tu peux apprendre à coder de pleins de manières, et en plus tu vas voir, c'est plutôt simple ! <br> Mais il faut d'abord choisir quel langage tu veux apprendre,
+	et seulement ensuite tu pourras commencer ton apprentissage.  <br>
+	 Démarre tout de suite le premier chapitre pour déterminer quel langage te correspond !
+	 <br>Navigue entre les chapitres grâce au sommaire ou directement via le bouton à la fin des chapitres ;)
+</div>
+
+<div id="next_button">
+	<a id="nextchapter" href="ressources\Chapitre 1.html"><span><strong>Chapitre suivant</strong></span></a>
+  </div>
+
+<div class="bottombanner"></div>
+		</body>
+</html>

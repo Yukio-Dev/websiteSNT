@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png">
+                    <title>Apprends à coder !</title>
+    </head>
+<style>
+body{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+
+
+}
+
+html{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+        text-decoration: none;
+        color-adjust: none;
+
+}
+@media screen and (min-width:1300px) and (max-width:2000px){
+div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 17.5%;
+			width: 65%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+        div#chapter_title {
+			width: 55%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 22.5%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+        div#voc_title{
+			text-align: center;
+            font-size: 24px;
+		}
+
+		div#voc {
+			width: 60%;
+			height: auto;
+			position: relative;
+			text-align: left;
+			line-height: 30px;
+            margin-left: 20%;
+			margin-top: 50px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			color: #010440;
+			border: 4px solid #010440;
+			border-radius: 45px;
+		}
+
+
+		.parent{
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 70px;
+			margin-bottom: 160px;
+			padding: 15px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+            font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+		}
+
+        div#list{
+			text-align: left;
+            position: relative;
+            float: right;
+        }
+
+        div#icons{
+            position: relative;
+            float: left;
+            margin-top: 150px;
+            margin-left: 30px;
+            margin-right: 50px;
+            vertical-align: middle;
+        }
+
+        img{
+            width: 100px;
+        }
+
+
+
+                        div#next_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 2230px;
+                left: 1570px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#nextchapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#nextchapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#nextchapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#nextchapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#nextchapter:hover:after{
+                width: 100%;
+                }
+
+
+
+
+                div#previous_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 2230px;
+                left: 360px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#previouschapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#previouschapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#previouschapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#previouschapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#previouschapter:hover:after{
+                width: 100%;
+                }
+
+
+
+                .bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+		}
+    }
+
+    @media screen and (min-width:1px) and (max-width:1290px)
+    {
+
+div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+        div#chapter_title {
+			width: 70%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 15%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+        div#voc_title{
+			text-align: center;
+            font-size: 24px;
+		}
+
+		div#voc {
+			width: 60%;
+			height: auto;
+			position: relative;
+			text-align: left;
+			line-height: 30px;
+            margin-left: 20%;
+			margin-top: 50px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			color: #010440;
+			border: 4px solid #010440;
+			border-radius: 45px;
+		}
+
+
+		.parent{
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 70px;
+			margin-bottom: 160px;
+			padding: 15px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+            font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+		}
+
+        div#list{
+			text-align: left;
+            position: relative;
+            float: right;
+        }
+
+        div#icons{
+            position: relative;
+            float: left;
+            margin-top: 150px;
+            margin-left: 30px;
+            margin-right: 50px;
+            vertical-align: middle;
+        }
+
+        img{
+            width: 100px;
+        }
+
+
+
+                        div#next_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 2230px;
+                left: 1570px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#nextchapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#nextchapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#nextchapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#nextchapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#nextchapter:hover:after{
+                width: 100%;
+                }
+
+
+
+
+                div#previous_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 2230px;
+                left: 360px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#previouschapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#previouschapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#previouschapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#previouschapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#previouschapter:hover:after{
+                width: 100%;
+                }
+
+
+
+                .bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+		}
+    }
+</style>
+
+
+    <body>
+        
+        <div id="blue_bar">
+            <div id="header"><h1>Comment apprendre à coder ?</h1><br>
+            </div>
+        </div>
+
+        <div id="chapter_title">
+            Chapitre 1 : Quel langage choisir ?
+        </div>
+    
+        <div id="voc">
+            <div id="voc_title"><strong>Avant de rentrer dans le vif du sujet, un peu de vocabulaire histoire de tout comprendre !</strong></div>
+            <ul style="list-style-type: square;">
+                <li><strong>Scripting:</strong> Le scripting est le fait d'automatiser une tâche/une action grâce à un script.</li>
+                <li><strong>Syntaxe:</strong> La syntaxe, c'est ton code. Lorsqu'il y a une erreur de syntaxe, cela veut dire que la machine ne comprend pas une indication 
+                car tu t'es trompé dans ton code.</li>
+                <li><strong>Système d'exploitation/OS:</strong> Un système d'exploitation c'est ce qui permet à un appareil électronique de fonctionner.
+                    <ul><li>Windows : Système d'exploitation pour les ordinateurs.</li>
+                        <li>MacOS : Système d'exploitation des ordinateurs Apple.</li>
+                        <li>Android : Système d'exploitation de tous les téléphones et toutes les tablettes.</li>
+                        <li>iOS : Système d'exploitation des téléphones et tablettes Apple.</li>
+                    </ul>
+                </li>
+                <li><strong>Haut/Bas niveau:</strong> Le niveau d'un langage signifie à quel point il s'éloigne du langage de la machine. <br>
+                    Un langage haut niveau est un langage qui a été "simplifé" pour être plus compréhensible par l'homme, il est donc plus éloigné du langage de la machine.
+                Paradoxalement, un langage de bas niveau est bien plus difficile à apprendre, et inversement.</li>
+                <li><strong>Programmation orientée objet:</strong> La programmation orientée consiste à faire interagir des objets/des éléments. Chaque objet est catégorisé 
+                dans une classe, ce qui va donc définir ses interactions avec les autres objets de sa classe, mais aussi ceux des autres.</li>
+            </ul>    
+        <div id="voc_title"> <strong>Maintenant que tu sais tout ça, on peut y aller !</strong> </div> 
+        </div>
+
+    <div class="parent">
+        <div id="icons">
+         
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/480px-Python-logo-notext.svg.png" alt="icon"> <br>
+
+           
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="icon"
+            style="margin-top: 80px;"><br>
+
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/768px-C_Sharp_wordmark.svg.png" alt="icon"> <br>
+
+         
+            <img src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png" alt="icon"
+            style="margin-top: 10px;"><br>
+
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png" alt="icon"
+            style="margin-top: 10px;"> <br>
+
+
+            <img src="http://assets.stickpng.com/images/58482ce4cef1014c0b5e4a4c.png" alt="icon"
+            style="margin-top: 25px;"><br>
+            
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="icon"
+            style="margin-top: 40px;">
+
+        </div>
+        <div id="lists">
+        Pour choisir le langage que tu vas apprendre tu dois d'abord savoir ce que tu veux créer. Tu ne vas évidemment pas choisir le même langage pour faire des jeux-vidéos,
+        des sites web, ou même des applications mobiles et des logiciels. Je vais donc te parler des différents langages les plus connus, et l'utlisation que tu peux en faire.
+        <br>
+        <p>
+            <li style="list-style-type:disc;"><strong>Python</strong>:  Python est l'un des langages les plus simples à apprendre. Il est grandement utilisé pour 
+                le scripting, le développement web et la data science (machine learning, intelligence artificelle etc... 
+                En somme, tout ce qui se base énormément sur les données). Son principal avantage est sa facilité d'utilisation. Ses plus 
+                gros inconvénients sont le fait que c'est un langage plutôt lent (comparés à des scripts compilés, qui se rapprochent plus directement du langage 
+                des machines/ordinateurs), et le fait que les erreurs de syntaxe dans un script ne s'affichent qu'une fois qu'il est actionné.</li>
+
+            <br><li style="list-style-type:disc;"><strong>C++ et C#</strong>: Ces deux langages sont très proches car le C# est un dérivé du C++. Ils servent tous les deux 
+                principalement à développer des jeux-vidéos Windows, Xbox et Playstation (le C++ est à la base de nombreux moteurs graphiques comme Unreal Engine et Unity), 
+                des programmes 3D et de traitement de texte. Le C++ est extremement dur à apprendre car c'est un langage de bas niveau, il est donc plus rapide que le Python 
+                et offre de meilleures performances (c'est pour ca qu'il est utilisé pour les jeux-vidéos). Le C# lui est dérivé du C++ mais sa forme est insipré du Java, il est donc de plus haut niveau et plus accessible.
+                Ce sont des langages dits "orientés objets".</li>
+
+            <br><br><li style="list-style-type:disc;"><strong>Java</strong>: Le Java sert à créer des applications mobiles pour Android et des logiciels ou des jeux pour 
+                ordinateurs. C'est un langage d'une difficulté intermédiaire, souvent couplé au XML, un langage tout aussi accessible.</li>
+                
+            <br><li style="list-style-type:disc;"><strong>Kotlin</strong>: Il sert aussi programmer des applications mobiles pour Android et est également couplé au XML. 
+                C'est un successeur plus récent du Java dont il est très similaire. Il est également très simple à apprendre, même si le nombre de formations gratuites 
+                en ligne reste pour l'instant très faible.</li>
+                
+            <br><li style="list-style-type:disc;"><strong>Swift</strong>: Celui-ci sert à développer des applications et des logiciels pour tous les appareils fonctionnant
+                sous un système d'exploitation Apple (iOS pour iPhones;   macOS pour MacBooks et iMacs;   iPadOS pour iPads;   wearOS pour Apple Watch;   
+                TvOS pour AppleTV etc...) C'est un langage qui se veut très simple et accessible à tous.</li>
+
+            <br><li style="list-style-type:disc;"><strong>HTML</strong>: Enfin l'HTML sert à créer des sites web. Bien que ce soit un langage extremement simple et déstiné 
+                aux débutants, il est essentiel dans la vie de tous les jours. Ce langage est vraiment la racine et la base des sites web, il est donc quasi-systematiquement
+                couplé au CSS pour améliorer l'aspect visuel du site, et au JavaScript pour créer des éléments interactifs et dynamiques.</li>
+</p>
+        </div>
+        
+
+    </div>
+
+    <div id="previous_button">
+        <a id="previouschapter" href="..\website.html"><span><strong>Retour à l'intro</strong></span></a>
+      </div>
+
+
+    <div id="next_button">
+        <a id="nextchapter" href="Chapitre 2.html"><span><strong>Chapitre suivant</strong></span></a>
+      </div>
+
+      <div class="bottombanner"></div>
+
+    </body>
+</html>

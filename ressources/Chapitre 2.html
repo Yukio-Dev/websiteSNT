@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png">
+                    <title>Apprends à coder !</title>
+    </head>
+    <style>
+
+
+body{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+
+
+}
+
+html{
+    width:auto;
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+        text-decoration: none;
+        color-adjust: none;
+
+}
+div#blue_bar{
+			background-color: #010440;
+			overflow-y: hidden;
+			margin-top: 30px;
+			margin-left: 17.5%;
+			width: 65%;
+			height: 50px;
+			border-top-right-radius: 65px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 65px;
+			border-bottom-right-radius: 5px;
+
+		}
+		div#header {
+			position: relative;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600, normal;
+			font-size: 13px;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			bottom: 10px;
+		}
+
+        div#chapter_title {
+			width: 55%;
+			height: 40px;
+			margin-top: 70px;
+			margin-left: 22.5%;
+			border: 8px solid #010440;
+			border-radius:30px;
+			font-weight: 600, normal;
+			font-size: 25px;
+			font-family: 'Open Sans', sans-serif;
+			color: rgb(245, 245, 245);
+			background-color: #010440;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		div#chapter {
+			width: 80%;
+			text-align: left;
+			margin-left: 10%;
+			margin-top: 70px;
+			margin-bottom: 50px;
+			padding: 15px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 35px;
+			color: #010440;
+			border: 6px outset #c7c7c7;
+		}
+
+		div#app_list{
+			width: 1540px;
+			height: 290px;
+			margin-left: 10%;
+			margin-bottom: 150px;
+			border: solid #010440 4px;
+			border-radius: 45px;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif; ;
+			font-weight: 800;
+			font-size: 24px;
+			color: #010440;
+			
+
+		}
+
+		.app_icons{
+			display: inline-block;
+			margin-top: 20px;
+			margin-left: 40px;
+			font-family: 'Open Sans', sans-serif; ;
+			font-weight: 800;
+			font-size: 21px;
+
+		}
+
+		img{
+		position: relative;
+		width: 100px;
+		top: 30px;
+		}
+
+
+		div#next_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 1685px;
+                left: 1570px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#nextchapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#nextchapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#nextchapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#nextchapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#nextchapter:hover:after{
+                width: 100%;
+                }
+
+
+
+
+                div#previous_button{
+                float: right;
+                position: absolute;
+                overflow: hidden;
+                top: 1685px;
+                left: 360px;
+                transform: translate(-50%, -50%);
+                }
+
+                a#previouschapter{
+                display: block;
+                width: 340px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 28px;
+                font-family: sans-serif; 	
+                text-decoration: none;
+                color: #010440;
+                border: 2px solid #010440;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;
+                border-radius: 35px;
+                }
+
+                a#previouschapter span{
+                position: relative;
+                z-index: 2;
+                }
+
+                a#previouschapter:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                background: #010440;
+                border-radius: 35px;
+                transition: all .35s;
+                }
+
+                a#previouschapter:hover{
+                color: rgb(245, 245, 245);
+                }
+
+                a#previouschapter:hover:after{
+                width: 100%;
+                }
+
+
+
+                .bottombanner{
+			overflow-y: hidden;
+			position: relative;
+			width: 100%;
+			padding-bottom:5px;
+			background-color: #010440;
+			border-radius: 45px;
+		}
+    </style>
+    <body>
+        
+        <div id="blue_bar">
+            <div id="header"><h1>Comment apprendre à coder ?</h1><br>
+            </div>
+        </div>
+
+        <div id="chapter_title">
+            Chapitre 2 : Comment écrire du code ?
+        </div>
+
+		<div id="chapter">
+			Pour écrire du code, que tu sois depuis un ordinateur Windows ou Mac, tu vas avoir besoin d'un logiciel adapté à ton langage. Même si techniquement, la plupart
+			des langages pourraient s'écrire dans un simple bloc-note, ce n'est pas le plus simple et c'est loin d'être le plus ergonomique.
+			<br> 
+				<strong> Quel logiciel choisir pour du : </strong><br>
+				<br><li style="list-style-type:disc;"><strong>Python</strong>:  Pour du Python, plusieurs possibilités s'offrent à toi. Les plus connus sont l'IDE PyCharm
+				(IDE signifie "integrated development environment". C'est un logiciel qui regroupe plusieurs outils comme un editeur de texte, un compilateur, une console 
+				de débogage etc), Visual Studio Code, et Sublime Text. Tous ces logiciels sont très similaires, à toi de choisir lequel tu préfères 
+				en fonction de l'esthétique, de la facilité d'utilisation et des fonctionnalités(options,extensions...)
+				</li>
+
+				<br><li style="list-style-type:disc;"><strong>C++ et C#</strong>: Les IDE les plus connus pour faire du C++ sont Code::Blocks et Visual++ sur Windows, et 
+					XCode sur Mac. <br>
+					Pour faire du C# tu peux utiliser l'éditeur de texte Visual Studio Code ainsi que l'IDE Visual Studio (à ne pas confondre) </li>
+	
+				<br><li style="list-style-type:disc;"><strong>Java</strong>: Pour faire du Java, les logiciels les plus connus sont IntelliJ Idea et Netbeans. 
+					La plupart des développeurs ont commencé sur Eclipse mais migrent progressivement vers IntelliJ Idea à cause de bugs et de son interface vieillisante.</li>
+					
+				<br><li style="list-style-type:disc;"><strong>Kotlin et Java</strong> (pour le développement mobile uniquement) : <br>
+				Pour le développement mobile, l'IDE le plus utilisé est Android Studio. L'outil fait par Google à le monopole dans le milieu des IDEs accés développement mobile.
+				Il est grandement apprécié pour son interface de prévisualisation en direct et son émulateur Android (il vous permet d'utiliser un téléphone Android virtuel
+				afin de tester votre application, sans avoir à l'injecter systematiquement dans votre téléphone physique).</li>
+					
+				<br><li style="list-style-type:disc;"><strong>Swift</strong>: L'éditeur de texte le plus populaire est Atom, il est disponbible sur Windows et Mac.
+				Sublime Text et Visual Studio Code sont aussi utilisés bien que moins courants.</li>
+	
+				<br><li style="list-style-type:disc;"><strong>HTML</strong>: Le langage HTML est construit simplement que n'importe quel éditeur de texte suffit, même un 
+					bloc-note. Les éditeurs de textes les plus utilisés sont Sublime Text, mais surtout Visual Studio Code, très pratique grâce à toutes ces extensions faites
+					par la communauté (c'est celui que j'utilise personnellement)
+				</li>
+	
+	
+		</div>
+    
+		<div id="app_list">
+			
+			Clique pour en savoir plus : <br>
+
+			<div class="app_icons">PyCharm <br>
+				<a href="https://www.jetbrains.com/fr-fr/pycharm/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png" alt="PyCharm"></a>
+			</div>
+			<div class="app_icons">Visual Studio Code<br>
+				<a href="https://code.visualstudio.com/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code"></a>
+			</div>
+			<div class="app_icons">Sublime Text<br>
+				<a href="https://www.sublimetext.com/">
+				<img src="https://upload.wikimedia.org/wikipedia/fr/7/78/Sublime_text_logo.png" alt="Sublime Text"></a>
+			</div>
+			<div class="app_icons">Code::Blocks<br>
+				<a href="https://www.codeblocks.org/">
+				<img src="https://pic.clubic.com/v1/images/1506483/raw" alt="CodeBlocks"></a>
+			</div>
+			<div class="app_icons">Visual Studio<br>
+				<a href="https://visualstudio.microsoft.com/fr/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Visual_Studio_Icon_2019.svg/1200px-Visual_Studio_Icon_2019.svg.png" alt="Visual Studio"></a>
+			</div>
+			<div class="app_icons">Intellij Idea<br>
+				<a href="https://www.jetbrains.com/fr-fr/idea/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/2048px-IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ Idea"></a>
+			</div>
+			<div class="app_icons">Android Studio<br>
+				<a href="https://developer.android.com/studio">
+				<img src="https://devweb88.com/wp-content/uploads/2021/05/androiddd.png" alt="Android Studio"></a>
+			</div>
+			<div class="app_icons">Atom<br>
+				<a href="https://atom.io/">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Atom_editor_logo.svg/1200px-Atom_editor_logo.svg.png" alt="Atom" style="margin-top: 13px;"></a>
+			</div>
+
+
+		</div>
+
+
+		<div id="previous_button">
+			<a id="previouschapter" href="Chapitre 1.html"><span><strong>Chapitre précédent</strong></span></a>
+		  </div>
+	
+	
+		<div id="next_button">
+			<a id="nextchapter" href="Chapitre 3.html"><span><strong>Chapitre suivant</strong></span></a>
+		  </div>
+	
+		  <div class="bottombanner"></div>
+
+    </body>
+</html>
